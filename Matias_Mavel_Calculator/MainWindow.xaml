@@ -67,7 +67,7 @@
         <Button Grid.Row="3" Grid.Column="3" Name="BTN_MUL" Style="{StaticResource MyStyle}" Content="*" Click="BTN_MUL_Click" />
             
         <Button Grid.Row="4" Grid.Column="0" Name="BTN_0" Content="0" Click="BTN_0_Click" />
-        <Button Grid.Row="4" Grid.Column="1" Name="BTN_CLR" Content="CLR" Background="#BBB2B2"  />
+        <Button Grid.Row="4" Grid.Column="1" Name="BTN_CLR" Content="CLR" Background="#BBB2B2" Click="BTN_CLR_Click"  />
         <Button Grid.Row="4" Grid.Column="2" Name="BTN_egal" Content="=" Background="#FF9900" Click="BTN_egal_Click"/>
         <Button Grid.Row="4" Grid.Column="3" Name="BTN_divide" Style="{StaticResource MyStyle}" Content="/" Click="BTN_divide_Click" />
 

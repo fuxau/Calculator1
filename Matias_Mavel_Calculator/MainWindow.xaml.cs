@@ -139,6 +139,11 @@ namespace Matias_Mavel_Calculator
                     break;
             }
         }
+        private void BTN_CLR_Click(object sender, RoutedEventArgs e)
+        {
+            TB_Display.Text = "0";
+            Display("0");
+        }
 
 
         public void Display(string num)
@@ -152,5 +157,6 @@ namespace Matias_Mavel_Calculator
                 TB_Display.Text = TB_Display.Text + num;
             }
         }
+
     }
 }
