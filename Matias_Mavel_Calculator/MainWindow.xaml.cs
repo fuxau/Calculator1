@@ -145,7 +145,6 @@ namespace Matias_Mavel_Calculator
             Display("0");
         }
 
-
         public void Display(string num)
         {
             if (TB_Display.Text == "0")
