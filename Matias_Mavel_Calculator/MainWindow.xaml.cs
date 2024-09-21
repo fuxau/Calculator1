@@ -30,6 +30,7 @@ namespace Matias_Mavel_Calculator
         int second_no =0;
         char operation= ' ';
         int result = 0;
+        int result2 = 0;
 
         private void BTN_1_Click(object sender, RoutedEventArgs e)
         {
@@ -133,9 +134,9 @@ namespace Matias_Mavel_Calculator
                     break;
 
                 case '/':
-                  
-                    result = first_no / second_no;
-                    TB_Display.Text = result.ToString();
+
+                     double result2 = (double)first_no / second_no;
+                    TB_Display.Text = result2.ToString();
                     break;
             }
         }
