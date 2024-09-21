@@ -73,11 +73,11 @@
         <Button Grid.Row="4" Grid.Column="2" Name="BTN_egal" Content="=" Background="#ff9500" Click="BTN_egal_Click"/>
         <Button Grid.Row="4" Grid.Column="3" Name="BTN_divide" Style="{StaticResource MyStyle}" Content="/" Click="BTN_divide_Click" />
 
-        <Button Grid.Row="5" Grid.Column="0" Name="BTN_LN" Content="ln" Style="{StaticResource MyStyle}"/>
-        <Button Grid.Row="5" Grid.Column="1" Name="BTN_LOG" Content="log" Style="{StaticResource MyStyle}"/>
-        <Button Grid.Row="5" Grid.Column="2" Name="BTN_exp" Content="exp" Style="{StaticResource MyStyle}"/>
-        <Button Grid.Row="5" Grid.Column="3" Name="BTN_cos" Content="cos" Style="{StaticResource MyStyle}"/>
-        <Button Grid.Row="5" Grid.Column="4" Name="BTN_tan" Content="tan" Style="{StaticResource MyStyle}"/>
+        <Button Grid.Row="5" Grid.Column="0" Name="BTN_LN" Content="ln" Style="{StaticResource MyStyle}" Click="BTN_LN_Click"/>
+        <Button Grid.Row="5" Grid.Column="1" Name="BTN_LOG" Content="log" Style="{StaticResource MyStyle}" Click="BTN_LOG_Click"/>
+        <Button Grid.Row="5" Grid.Column="2" Name="BTN_sqrt" Content="&#8730;" Style="{StaticResource MyStyle}" Click="BTN_sqrt_Click"/>
+        <Button Grid.Row="5" Grid.Column="3" Name="BTN_cos" Content="cos" Style="{StaticResource MyStyle}" Click="BTN_cos_Click"/>
+        <Button Grid.Row="5" Grid.Column="4" Name="BTN_tan" Content="tan" Style="{StaticResource MyStyle}" Click="BTN_tan_Click"/>
         
 
 
