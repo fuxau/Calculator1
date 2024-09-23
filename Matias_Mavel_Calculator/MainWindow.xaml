@@ -52,26 +52,30 @@
         
         <!-- Row 1 -->
 
-        <TextBox Grid.Row="0" Grid.ColumnSpan="5" Name="TB_Display" Background="#1c1c1c" Foreground="White" BorderThickness="0"></TextBox>
+        <TextBox Grid.Row="0" Grid.ColumnSpan="5" Name="TB_Display" Background="#1c1c1c" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" FontSize="60"></TextBox>
         <Button Grid.Row="1" Grid.Column="0" Name="BTN_1" Content="1" Click="BTN_1_Click" />
         <Button Grid.Row="1" Grid.Column="1" Name="BTN_2" Content="2" Click="BTN_2_Click" />
         <Button Grid.Row="1" Grid.Column="2" Name="BTN_3" Content="3" Click="BTN_3_Click" />
         <Button Grid.Row="1" Grid.Column="3" Name="BTN_Plus" Style="{StaticResource MyStyle}" Content="+" Click="BTN_Plus_Click" />
+        <Button Grid.Row="1" Grid.Column="4" Name="BTN_pi" Content="&#960;" Style="{StaticResource MyStyle}" Click="BTN_pi_Click"/>
 
         <Button Grid.Row="2" Grid.Column="0" Name="BTN_4" Content="4" Click="BTN_4_Click" />
         <Button Grid.Row="2" Grid.Column="1" Name="BTN_5" Content="5" Click="BTN_5_Click" />
         <Button Grid.Row="2" Grid.Column="2" Name="BTN_6" Content="6" Click="BTN_6_Click" />
         <Button Grid.Row="2" Grid.Column="3" Name="BTN_minus" Style="{StaticResource MyStyle}" Content="-" Click="BTN_minus_Click" />
-        
+        <Button Grid.Row="2" Grid.Column="4" Name="BTN_mod" Content="%" Style="{StaticResource MyStyle}" Click="BTN_mod_Click"/>
+
         <Button Grid.Row="3" Grid.Column="0" Name="BTN_7" Content="7" Click="BTN_7_Click" />
         <Button Grid.Row="3" Grid.Column="1" Name="BTN_8" Content="8" Click="BTN_8_Click" />
         <Button Grid.Row="3" Grid.Column="2" Name="BTN_9" Content="9" Click="BTN_9_Click" />
         <Button Grid.Row="3" Grid.Column="3" Name="BTN_MUL" Style="{StaticResource MyStyle}" Content="*" Click="BTN_MUL_Click" />
-            
+        <Button Grid.Row="3" Grid.Column="4" Name="BTN_pui" Style="{StaticResource MyStyle}" Content="&#94;" Click="BTN_pui_Click" />
+
         <Button Grid.Row="4" Grid.Column="0" Name="BTN_0" Content="0" Click="BTN_0_Click" />
         <Button Grid.Row="4" Grid.Column="1" Name="BTN_CLR" Content="AC" Background="#d4d4d2" Click="BTN_CLR_Click"  />
         <Button Grid.Row="4" Grid.Column="2" Name="BTN_egal" Content="=" Background="#ff9500" Click="BTN_egal_Click"/>
         <Button Grid.Row="4" Grid.Column="3" Name="BTN_divide" Style="{StaticResource MyStyle}" Content="/" Click="BTN_divide_Click" />
+        <Button Grid.Row="4" Grid.Column="4" Name="BTN_SIN" Style="{StaticResource MyStyle}" Content="sin" Click="BTN_SIN_Click" />
 
         <Button Grid.Row="5" Grid.Column="0" Name="BTN_LN" Content="ln" Style="{StaticResource MyStyle}" Click="BTN_LN_Click"/>
         <Button Grid.Row="5" Grid.Column="1" Name="BTN_LOG" Content="log" Style="{StaticResource MyStyle}" Click="BTN_LOG_Click"/>

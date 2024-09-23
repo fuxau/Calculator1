@@ -27,11 +27,10 @@ namespace Matias_Mavel_Calculator
 
         }
 
-        int first_no = 0;
-        int second_no =0;
+        double first_no = 0;
+        double second_no =0;
         char operation= ' ';
-        int result = 0;
-        int result2 = 0;
+        double result = 0;
 
         private void BTN_1_Click(object sender, RoutedEventArgs e)
         {
@@ -85,41 +84,41 @@ namespace Matias_Mavel_Calculator
 
         private void BTN_Plus_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = '+';
         }
 
         private void BTN_minus_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = '-';
         }
 
         private void BTN_MUL_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = '*';
         }
 
         private void BTN_divide_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = '/';
         }
 
         private void BTN_egal_Click(object sender, RoutedEventArgs e)
         {
-            second_no = (int)double.Parse( TB_Display.Text);
+            second_no = double.Parse( TB_Display.Text);
             switch (operation)
             {
                 case '+':
 
-                    double result2 = (double)first_no + second_no;
-                    TB_Display.Text = result2.ToString();
+                     result = first_no + second_no;
+                    TB_Display.Text = result.ToString();
                     break;
 
                 case '-':
@@ -136,42 +135,60 @@ namespace Matias_Mavel_Calculator
 
                 case '/':
 
-                     double result3 = (double)first_no / second_no;
-                    TB_Display.Text = result3.ToString();
+                     result = (double)first_no / second_no;
+                    TB_Display.Text = result.ToString();
                     break;
 
                 case 'a':
 
-                    result2 = Math.Round(Math.Sqrt(first_no), 2);
-                    TB_Display.Text = result2.ToString();
+                    result = Math.Round(Math.Sqrt(first_no), 2);
+                    TB_Display.Text = result.ToString();
 
                     break;
 
                 case 'b':
 
-                    result2 = Math.Round(Math.Log10(first_no), 2);
-                    TB_Display.Text = result2.ToString();
-                    result2 = first_no;
+                    result = Math.Round(Math.Log10(first_no), 2);
+                    TB_Display.Text = result.ToString();
+                    result = first_no;
 
                     break;
 
                 case 'c':
                     
-                    result2 = Math.Round(Math.Log(first_no), 2);
-                    TB_Display.Text = result2.ToString();
+                    result = Math.Round(Math.Log(first_no), 2);
+                    TB_Display.Text = result.ToString();
                     break;
 
                 case 'd':
 
-                    result2 = Math.Round(Math.Cos(first_no), 2);
-                    TB_Display.Text= result2.ToString();
+                    result = Math.Round(Math.Cos(first_no), 2);
+                    TB_Display.Text= result.ToString();
                     break;
 
                 case 'e':
 
-                    result2 = (Math.Round(Math.Tan(first_no), 2));
-                    TB_Display.Text = result2.ToString();
+                    result = Math.Round(Math.Tan(first_no), 2);
+                    TB_Display.Text = result.ToString();
 
+                    break;
+
+                case 'f':
+
+                    result = Math.Round(Math.Sin(first_no), 2);
+                    TB_Display.Text = result.ToString();
+                    break;        
+                
+                case 'g':
+
+                    result =  Math.Pow(first_no, second_no);
+                    TB_Display.Text = result.ToString();
+                    break;
+
+                case '%':
+
+                    result = first_no % second_no;
+                    TB_Display.Text = result.ToString();
                     break;
             }
         }
@@ -184,7 +201,7 @@ namespace Matias_Mavel_Calculator
 
         private void BTN_sqrt_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = 'a';
         }
@@ -192,7 +209,7 @@ namespace Matias_Mavel_Calculator
 
         private void BTN_LOG_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = 'b';
 
@@ -200,24 +217,54 @@ namespace Matias_Mavel_Calculator
 
         private void BTN_LN_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = 'c';
         }
 
         private void BTN_cos_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = 'd';
         }
 
         private void BTN_tan_Click(object sender, RoutedEventArgs e)
         {
-            first_no = (int)double.Parse(TB_Display.Text);
+            first_no = double.Parse(TB_Display.Text);
             TB_Display.Text = "0";
             operation = 'e';
         }
+
+
+        private void BTN_SIN_Click(object sender, RoutedEventArgs e)
+        {
+            first_no = double.Parse(TB_Display.Text);
+            TB_Display.Text = "0";
+            operation= 'f';
+        }
+
+
+        private void BTN_pui_Click(object sender, RoutedEventArgs e)
+        {
+            first_no = double.Parse(TB_Display.Text);
+            TB_Display.Text = "0";
+            operation = 'g';
+        }
+
+        private void BTN_mod_Click(object sender, RoutedEventArgs e)
+        {
+            first_no = double.Parse(TB_Display.Text) ;
+            TB_Display.Text = "0";
+            operation = '%';
+        }
+
+        private void BTN_pi_Click(object sender, RoutedEventArgs e)
+        {
+            result = (Math.PI);
+            TB_Display.Text = result.ToString();
+        }
+
 
         public void Display(string num)
         {
